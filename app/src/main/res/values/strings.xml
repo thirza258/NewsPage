@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NewsPage</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="the_bright_future_of_web_3_0">The Bright Future of Web 3.0?</string>
+    <string name="we_dive">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of hte people. But is it really fulfilling its promise?</string>
+</resources>
