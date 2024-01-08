@@ -72,7 +72,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:background="@color/black"
+                android:background="@color/very_dark_blue"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
@@ -91,14 +91,21 @@
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-
-
+                    android:layout_height="wrap_content"
+                    android:id="@+id/new_news"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    />
 
             </LinearLayout>
 
-
-
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/news"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
 
 
         </LinearLayout>
