@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.newspage.R;
 import com.example.newspage.class_content.News;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +36,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
         News item = data.get(position);
         holder.textTitle.setText(item.getTitle());
         holder.contentText.setText(item.getContent());
-        holder.imageView.setImageURI(item.getURLImage());
+        Picasso.get().load(item.getImageURL()).into(holder.imageView);
         holder.indexs.setText(String.valueOf(position + 1));
     }
 

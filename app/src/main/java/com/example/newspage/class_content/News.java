@@ -3,11 +3,15 @@ package com.example.newspage.class_content;
 import android.net.Uri;
 
 public class News {
-    private String URLImage, title, content;
     private int id;
+    private String title;
+    private String content;
+    private String url_image;
+    private String created_at;
+    private String deleted_at;
 
-    public News(String URLImage, String title, String content, int id) {
-        this.URLImage = URLImage;
+    public News(String url_image, String title, String content, int id) {
+        this.url_image = url_image;
         this.title = title;
         this.content = content;
         this.id = id;
@@ -16,8 +20,12 @@ public class News {
     public News() {
     }
 
+    public String getImageURL() {
+        return url_image;
+    }
+
     public Uri getURLImage() {
-        return Uri.parse(URLImage);
+        return Uri.parse(url_image);
     }
 
     public String getTitle() {

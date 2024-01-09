@@ -3,6 +3,7 @@ package com.example.newspage.adapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -35,6 +36,9 @@ public class NewNewsAdapter extends RecyclerView.Adapter<NewNewsAdapter.ViewHold
         NewNews item = new_data.get(position);
         holder.textTitle.setText(item.getTitle());
         holder.contentText.setText(item.getContent());
+        if(position != 0) {
+            holder.divider.setVisibility(View.VISIBLE);
+        }
     }
 
     @Override
@@ -44,9 +48,11 @@ public class NewNewsAdapter extends RecyclerView.Adapter<NewNewsAdapter.ViewHold
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         TextView textTitle, contentText;
+        ImageView divider;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+            divider = itemView.findViewById(R.id.new_news_divider);
             textTitle = itemView.findViewById(R.id.new_news_title);
             contentText = itemView.findViewById(R.id.new_news_content);
 
