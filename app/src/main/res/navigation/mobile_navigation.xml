@@ -12,14 +12,28 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.newspage.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_new"
+        android:name="com.example.newspage.ui.newnews.NewFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_new" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.newspage.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_popular"
+        android:name="com.example.newspage.ui.popular.PopularFragment"
+        android:label="Popular"
+        tools:layout="@layout/fragment_popular" />
+
+    <fragment
+        android:id="@+id/nav_trending"
+        android:name="com.example.newspage.ui.trending.TrendingFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_trending" />
+
+    <fragment
+        android:id="@+id/nav_categories"
+        android:name="com.example.newspage.ui.categories.CategoriesFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_categories" />
+
+
 </navigation>
